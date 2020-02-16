@@ -1,11 +1,11 @@
-#Japunis - Belajar Bahasa Jepang
+# Japunis - Belajar Bahasa Jepang
 
-##Tentang
+## Tentang
 Proyek untuk mengakhiri perkuliahan kesarjanaan.
 Ditulis dengan bahasa pemograman PHP dengan bantuan founder SEME Framework, dan tentu menggunakan saja ditulis di atas SEME Framework.
 https://github.com/drosanda/seme-framework-v3
 
-##Daftar Pustaka
+## Daftar Pustaka
 Konten Pelajaran, dialog percakapan, dan ilustrasi:
 Fujitsu's Guide Japanese
 https://www.fujitsu.com/global/products/computing/servers/japanese/
