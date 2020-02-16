@@ -1,3 +1,0 @@
-<?php
-$saltkey = 'odpasinaso220)*';
-?>
