@@ -36,6 +36,7 @@
 		
 		<!-- Modernizr (browser feature detection library) -->
 		<script src="<?php echo $this->skins->admin; ?>js/vendor/modernizr.min.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 		
 	</head>
 	

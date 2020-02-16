@@ -42,9 +42,10 @@
 						<input type="password" id="irepassword" name="repassword" placeholder="Ketik Ulang Password" required="required" class="input" value="" data-equalto="ipassword" />
 		        		<small class="error">Password harus sama.</small>
 					</div>
-					<div class="columns large-12">
+					<div class="g-recaptcha columns large-12" data-sitekey="6LcfVtkUAAAAAKEVBqc--ET_68AMrYZHoE3Vfqiy"></div>
+					<!-- <div class="columns large-12"> -->
 						<!-- <input type="text" id="ikelas" name="kelas" placeholder="Kelas" required /> -->
-						<select name="kelas" id="ikelas" placeholder="Pilih Kelas" required>
+						<!-- <select name="kelas" id="ikelas" placeholder="Pilih Kelas" required>
 			              <option value="">-- Pilih Kelas --</option>
 			              <option value="11 AP 1">11 AP 1</option>
 			              <option value="11 AP 2">11 AP 2</option>
@@ -57,7 +58,7 @@
 			              <option value="11 PM 2">11 PM 2</option>
 			            </select>
 			            <small class="error">Kelas harus dipilih.</small>
-					</div>
+					</div> -->
 				</div>
 				<div class="row">
 					<div class="columns large-12">

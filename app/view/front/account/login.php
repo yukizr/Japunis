@@ -20,6 +20,7 @@
 							<input type="password" id="ipassword" name="password" placeholder="password" required/>
 							<small class="error">Isi Password terlebih dahulu</small>
 						</div>
+						<div class="g-recaptcha column large-12" data-sitekey="6LcfVtkUAAAAAKEVBqc--ET_68AMrYZHoE3Vfqiy"></div>
 					</div>
 					<div class="row">
 						<div class="columns large-12">

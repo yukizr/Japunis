@@ -42,48 +42,62 @@
 			$di['password'] = $this->input->post('password');
 			$du['kelas'] = $this->input->post('kelas');
 			$du['is_active'] = 1;
+
+			//google captcha
+			$captcha=$_POST['g-recaptcha-response'];
+			$secretKey = "6LcfVtkUAAAAAJ5yWnzCSTnYAYeLLhHDujiRf9C2";
+			$ip = $_SERVER['REMOTE_ADDR'];
+			// post request to server
+			$url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+			$response = file_get_contents($url);
+			$responseKeys = json_decode($response,true);
 			
-			if(strlen($di['email'])>2 && strlen($di['password'])>2 && strlen($du['kelas'])>0){
-				$email_sudah = $this->bum->checkEmail($di['email']);
-				$di['password'] = md5($di['password']);
-				if($email_sudah>0){
-					$this->status = 196;
-					$this->message = 'Email sudah dipakai, gunakan yang lain';
-				}else{
-					$this->bum->trans_start();
-					$res = $this->bum->set($di);
-					if($res){
-						$this->bum->trans_commit();
+			if($responseKeys["success"]){
+				if(strlen($di['email'])>2 && strlen($di['password'])>2 && strlen($du['kelas'])>0){
+					$email_sudah = $this->bum->checkEmail($di['email']);
+					$di['password'] = md5($di['password']);
+					if($email_sudah>0){
+						$this->status = 196;
+						$this->message = 'Email sudah dipakai, gunakan yang lain';
+					}else{
 						$this->bum->trans_start();
-						$du['b_user_id'] = $res;
-						$res2 = $this->clm->set($du);
-						if($res2){
+						$res = $this->bum->set($di);
+						if($res){
 							$this->bum->trans_commit();
-							$this->status = 100;
-							$this->message = 'Berhasil';
-							$sess = $s['sess'];
-							if(!isset($sess->user)) $sess->user = new stdClass();
-							$sess->user = $this->clm->auth($di['email'],$this->input->post('password'));
-							$this->setKey($sess);
-							$data['user'] = $sess->user;
-							$data['redirect_url'] = base_url('');
+							$this->bum->trans_start();
+							$du['b_user_id'] = $res;
+							$res2 = $this->clm->set($du);
+							if($res2){
+								$this->bum->trans_commit();
+								$this->status = 100;
+								$this->message = 'Berhasil';
+								$sess = $s['sess'];
+								if(!isset($sess->user)) $sess->user = new stdClass();
+								$sess->user = $this->clm->auth($di['email'],$this->input->post('password'));
+								$this->setKey($sess);
+								$data['user'] = $sess->user;
+								$data['redirect_url'] = base_url('');
+							}else{
+								$this->bum->trans_rollback();
+								$this->status = 197;
+								$this->message = 'Pendaftaran Gagal';
+							}
 						}else{
 							$this->bum->trans_rollback();
-							$this->status = 197;
+							$this->status = 198;
 							$this->message = 'Pendaftaran Gagal';
 						}
-					}else{
-						$this->bum->trans_rollback();
-						$this->status = 198;
-						$this->message = 'Pendaftaran Gagal';
+						$this->bum->trans_end();
+					
 					}
-					$this->bum->trans_end();
-				
+				}else{
+					$this->status = 199;
+					$this->message = 'Maaf, email atau password atau kelas nya tidak valid, coba lagi!';
 				}
 			}else{
-				$this->status = 199;
-				$this->message = 'Maaf, email atau password atau kelas nya tidak valid, coba lagi!';
+				echo"goblok";
 			}
+
 		}
 		
 		echo $this->__json_out($data);
