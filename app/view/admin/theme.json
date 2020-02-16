@@ -1,0 +1,7 @@
+[
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/admin/css/bootstrap.min.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/admin/css/plugins.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/admin/css/main.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/admin/css/style.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/admin/css/themes/flatie.css\" \/>"
+]

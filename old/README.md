@@ -1,0 +1,2 @@
+# fujitsu
+Fujitsu Japanese Guide

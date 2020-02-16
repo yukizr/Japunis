@@ -1,0 +1,6 @@
+[
+  "<script src=\"{{base_url}}skin/front/js/vendor/jquery.min.js\"><\/script>",
+  "<script src=\"{{base_url}}skin/front/js/foundation.min.js\"><\/script>",
+  "<script src=\"{{base_url}}skin/front/js/foundation/foundation.abide.js\"><\/script>",
+  "<script src=\"{{base_url}}skin/front/js/foundation/foundation.responsive-tables.js\"><\/script>"
+]

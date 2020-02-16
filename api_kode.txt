@@ -1,0 +1,13 @@
+100: berhasil / OK
+101: One or more parameter needed or parameter doesn't meet requirement
+102: Kombinasi username atau password salah
+104: Kode harus unik
+105: Pesan gagal Dikirim
+106: Cart Gagal Dipanggil
+107: mengakses property yang human miliknya
+400: Harus login
+401: You must login to access this feature
+404: Not Found
+900: Gagal Insert
+901: gagal update
+902: Gagal Delete

@@ -1,0 +1,37 @@
+body {
+  /*background: #e94e6d;*/
+}
+.columns{
+  /*background: white;*/
+}
+.footer{
+  background: #333333;
+  padding: 5px 0 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+ 
+.card-product{
+  background-color: #e4002b;
+  margin-bottom: 20px;
+  border: 1px solid #db4453;
+}
+.card-section{ 
+  padding: 10px 10px;
+}
+h3.card-product-name  {
+  color: #ffffff;
+}
+
+.accordion .content {
+  padding: 0.9375rem 0rem;
+}
+.accordion dd > a {
+  border: 1px solid white;
+}
+#panel1b img{
+  min-width: 100%;
+  border: 1px solid #dcd7d7;
+}

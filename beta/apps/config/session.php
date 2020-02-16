@@ -1,0 +1,3 @@
+<?php
+$saltkey = 'odpasinaso220)*';
+?>

@@ -1,0 +1,9 @@
+[
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/animate.min.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/normalize.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/foundation.min.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/font-awesome.min.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/responsive-tables.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/roboto.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/front/css/app.css\" \/>"
+]
