@@ -8,3 +8,5 @@ Allow: /assets/img/
 Allow: /media
 Allow: /media/produk
 Allow: /skin
+
+Sitemap:https://japunis.com/sitemap.xml
