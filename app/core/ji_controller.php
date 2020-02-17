@@ -1,9 +1,9 @@
 <?php
 	Class JI_Controller extends SENE_Controller {
-		var $site_title = 'Japunis - Fujitsu Guide Japanese';
-		var $site_description = 'Japunis.com merupakan adaptasi pembelajaran elektonis dari Fujitsu Guide Japanese yang disajikan dalam Bahasa Indonesia';
+		var $site_title = 'Japunis - Belajar Bahasa Jepang';
+		var $site_description = 'Belajar bahasa Jepang di mana saja dengan mudah dan gratis';
 		var $site_suffix = ' - Fujitsu Guide Japanese';
-		var $site_keyword = 'Fujitsu Guide Japanese';
+		var $site_keyword = 'bahasa Jepang, bahasa, belajar, pelajaran, online, gratis, mudah, audio, tata bahasa, Fujitsu guide japanese, guide japanese, Fujitsu';
 		var $page_current = 'beranda';
 		var $menu_current = 'beranda';
 		var $site_author = 'Yuki Zain Rohman';

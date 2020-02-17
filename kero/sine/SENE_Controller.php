@@ -11,7 +11,7 @@ abstract class SENE_Controller{
 	var $pretitle = 'SEME Framework';
 	var $posttitle = 'SEME Framework';
 	var $robots = 'INDEX,FOLLOW';
-	var $description = "Japunis.com merupakan adaptasi dari modul pembelajaran Fujitsu's Guide to Japanese yang disajikan dalam Bahasa Indonesia. Supported By Seme Framework.";
+	var $description = "Belajar bahasa Jepang di mana saja dengan mudah dan gratis";
 	var $keyword = 'lightweight, framework, php, api, generator';
 	var $author = 'SEME Framework';
 	var $icon = 'favicon.png';
